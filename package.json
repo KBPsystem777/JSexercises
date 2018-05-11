@@ -1,12 +1,20 @@
 {
-  "name": "exercises",
+  "name": "JSexercises",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "Koleen BP",
-  "license": "MIT"
+  "author": "Koleen Paunon",
+  "license": "MIT",
+  "homepage": "https://kbpsystem777.github.io/JSexercises/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/KBPsystem777/JSexercises"
+  },
+  "bugs": {
+    "url": "https://github.com/KBPsystem777/JSexercises/issues"
+  }
 }
