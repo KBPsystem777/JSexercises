@@ -15,6 +15,8 @@ function findSmallest(arr) {
 }
 ```
 Useful Links:
+
+
 [Math.min](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/min)
 
 ---
@@ -25,7 +27,11 @@ function AlphabeticalOrder(x) {
 }
 ```
 Useful Links:
+
+
 [Array.sort](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort)
+
+
 [Array.split](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split)
 
 ---
