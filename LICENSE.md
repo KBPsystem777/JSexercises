@@ -1,51 +1,6 @@
-JavaScript Exercises
-======
-Solutions and explanation to JS exercises.
+MIT License
 
-
-------
-
-
-
-## Find the smallest number in an `array`
-
-```
-function findSmallest(arr) {
-    return Math.min(...arr)
-}
-```
-Useful Links:
-
-
-[Math.min](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/min)
-
----
-## Sort strings by Alphabetical Order
-```
-function AlphabeticalOrder(x) {
-    return x.split('').sort().join(')
-}
-```
-Useful Links:
-
-
-[Array.sort](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort)
-
-
-[Array.split](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split)
-
-[Array.join](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/join)
-
----
-
-
-
-
-
-
-## MIT License
-
-Copyright (c) 2018 [Koleen BP](https:koleenbp.now.sh)
+Copyright (c) 2018 [Koleen BP](https://koleenbp.now.sh)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
