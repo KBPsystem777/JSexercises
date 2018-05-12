@@ -4,7 +4,7 @@ Solutions and explanation to JS exercises.
 
 This is not a cheat sheet!
 
-I made this compilation while solving JavaScript algorithms in [FreeCodeCamp](https://www.freecodecamp.org)and [Edabit](https://edabit.com/). I thought this must be a helpful guide for people trying to get up and running in web development paradigm.
+I made this compilation while solving JavaScript algorithms in [FreeCodeCamp](https://www.freecodecamp.org) and [Edabit](https://edabit.com/). I thought this must be a helpful guide for people trying to get up and running in web development paradigm.
 
 ------
 
