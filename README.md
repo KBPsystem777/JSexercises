@@ -2,12 +2,15 @@ JavaScript Exercises
 ======
 Solutions and explanation to JS exercises.
 
+This is not a cheat sheet!
+
+I made this compilation while solving JavaScript algorithms in [FreeCodeCamp](https://www.freecodecamp.org)and [Edabit](https://edabit.com/). I thought this must be a helpful guide for people trying to get up and running in web development paradigm.
 
 ------
 
 
 
-### Find the smallest number in an `array`
+### Find the smallest number in an array
 
 ```
 function findSmallest(arr) {
@@ -51,7 +54,7 @@ function factorializer(int) {
 Useful Links:
 
 
-[What is Factorial?](https://en.wikipedia.org/wiki/Factorial#Applications)
+[What is Factorial?](https://en.wikipedia.org/wiki/Factorial)
 
 
 [Recursion](https://www.youtube.com/watch?v=k7-N8R0-KY4)
