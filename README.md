@@ -104,7 +104,6 @@ Please feel free to submit an [issue](https://github.com/KBPsystem777/JSexercise
 
 [Pull Requests](https://github.com/KBPsystem777/JSexercises/pulls) are accepted as well
 
-## [MIT License](https://github.com/KBPsystem777/JSexercises/blob/master/LICENSE.md)
+---
 
-
-Copyright(c) 2018 [Koleen Paunon](https://koleenbp.now.sh)
+##### [MIT License](https://github.com/KBPsystem777/JSexercises/blob/master/LICENSE.md) | Copyright(c) 2018 [Koleen Paunon](https://koleenbp.now.sh)
