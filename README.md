@@ -63,6 +63,24 @@ Useful Links:
 
 ---
 
+### Identify if a number is Odd or Even?
+```
+function oddOrEven(int) {
+    let ouput = int % 2;
+    if(output == 0) {
+        return "That number is even"
+    } else {
+        return "That number is odd"
+    }
+}
+```
+Useful Links:
+
+
+[Modulo](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Arithmetic_Operators#Remainder_())
+
+---
+
 
 ## Bugs? Issues?
 
