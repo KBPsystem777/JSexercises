@@ -68,6 +68,8 @@ Useful Links:
 
 Please feel free to submit an [issue](https://github.com/KBPsystem777/JSexercises/issues/new)
 
+[Pull Requests](https://github.com/KBPsystem777/JSexercises/pulls) are accepted as well
+
 ## [MIT License](https://github.com/KBPsystem777/JSexercises/blob/master/LICENSE.md)
 
 
