@@ -81,6 +81,22 @@ Useful Links:
 
 ---
 
+### Eliminate all odd numbers in an array.
+```
+function evenOnly(arr) {
+    let result = arr.filter(arr => arr % 2 == 0);
+    return result;
+}
+```
+Useful Links:
+
+
+[Array.filter](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter)
+
+[Modulo](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Arithmetic_Operators#Remainder_())
+
+---
+
 
 ## Bugs? Issues?
 
