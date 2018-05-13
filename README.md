@@ -98,6 +98,27 @@ Useful Links:
 ---
 
 
+### Add up the numbers
+`sa``
+function addUp(num) {
+    if(num <= 1) {
+        return num;
+    } else {
+        return num + addUp(num - 1);
+    }
+}
+```
+Useful Links:
+
+
+[Recursion](https://www.youtube.com/watch?v=k7-N8R0-KY4)
+
+[1 + 2 + 3 + 4 + ⋯](https://en.wikipedia.org/wiki/1_%2B_2_%2B_3_%2B_4_%2B_%E2%8B%AF)
+
+---
+
+
+
 ## Bugs? Issues?
 
 Please feel free to submit an [issue](https://github.com/KBPsystem777/JSexercises/issues/new)
