@@ -99,7 +99,7 @@ Useful Links:
 
 
 ### Add up the numbers
-`sa``
+```
 function addUp(num) {
     if(num <= 1) {
         return num;
