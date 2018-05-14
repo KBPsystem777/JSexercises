@@ -135,6 +135,40 @@ Useful Links:
 
 
 
+### Return the Min, Max, Length and Average of an Array
+```
+function minMaxLengthAverage(arr) {
+    
+    const min = Math.min(...arr);
+    const max = Math.max(...arr);
+    const len = arr.length;
+    
+    //Reducer for get Average function
+    const ave = arr => arr.reduce((acc, curVal) => acc + curVal, 0) / len;
+    const average = ave(arr);
+    
+    //Return output
+    return [min, max, len, average];
+}
+
+```
+Useful Links:
+
+
+[Math.min](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/min)
+
+[Math.max](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/max)
+
+[Array.reduce](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce)
+
+[Array.length](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/length)
+
+---
+
+
+
+
+
 ## Bugs?, Issues?, Contribute?
 
 Please feel free to submit an [Issue](https://github.com/KBPsystem777/JSexercises/issues/new) or [Pull Requests](https://github.com/KBPsystem777/JSexercises/pulls)
