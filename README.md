@@ -135,11 +135,9 @@ Useful Links:
 
 
 
-## Bugs? Issues?
+## Bugs?, Issues?, Contribute?
 
-Please feel free to submit an [issue](https://github.com/KBPsystem777/JSexercises/issues/new)
-
-[Pull Requests](https://github.com/KBPsystem777/JSexercises/pulls) are accepted as well
+Please feel free to submit an [Issue](https://github.com/KBPsystem777/JSexercises/issues/new) or [Pull Requests](https://github.com/KBPsystem777/JSexercises/pulls)
 
 ---
 
