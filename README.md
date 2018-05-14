@@ -97,6 +97,22 @@ Useful Links:
 
 ---
 
+### Return numbers only
+```
+function numbersOnly(arr) {
+    return arr.filter(arr => typeof arr == 'number');
+};
+
+```
+Useful Links:
+
+
+[Array.filter](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter)
+
+[typeof](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof)
+
+---
+
 
 ### Add up the numbers
 ```
