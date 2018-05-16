@@ -22,7 +22,7 @@ I made this compilation while solving JavaScript algorithms in [FreeCodeCamp](ht
 > 1
 ```
 
-**Useful Links:**
+**Reference:**
 
 
 - [Math.min](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/min)
@@ -49,7 +49,7 @@ function findSmallest(arr) {
 ```
 
 
-**Useful Links:**
+**Reference:**
 
 
 - [Array.sort](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort)
@@ -86,7 +86,7 @@ function AlphabeticalOrder(str) {
 > 5040
 ```
 
-**Useful Links:**
+**Reference:**
 
 - [What is Factorial?](https://en.wikipedia.org/wiki/Factorial)
 
@@ -123,7 +123,7 @@ function factorializer(int) {
 > "Odd"
 ```
 
-**Useful Links:**
+**Reference:**
 
 
 - [Modulo](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Arithmetic_Operators#Remainder_())
@@ -158,7 +158,7 @@ function oddOrEven(int) {
 > [ 2, 4, 6 ]
 ```
 
-**Useful Links:**
+**Reference:**
 
 - [Array.filter](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter)
 
