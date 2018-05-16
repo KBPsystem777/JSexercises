@@ -10,14 +10,16 @@ I made this compilation while solving JavaScript algorithms in [FreeCodeCamp](ht
 
 
 
-### Find the smallest number in an array
+## Find the smallest number in an array
 
 *Create a function that will display the smallest value in the array.*
 
 **Example:**
 
 ```
-arr = [30, 45, 60, 7] //should return [7]
+> console.log(findSmallest([30, 45, 60, 7]));
+
+> 1
 ```
 
 **Useful Links:**
@@ -34,13 +36,20 @@ function findSmallest(arr) {
 ```
 
 ---
-### Sort strings by Alphabetical Order
+## Sort strings by Alphabetical Order
+
+*Function that will return your string in Alphabetical order* 
+
+**Example:**
+
 ```
-function AlphabeticalOrder(x) {
-    return x.split('').sort().join(')
-}
+> console.log(AlphabeticalOrder('hello'));
+
+> "ehllo"
 ```
-Useful Links:
+
+
+**Useful Links:**
 
 
 [Array.sort](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort)
@@ -50,19 +59,34 @@ Useful Links:
 
 [Array.join](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/join)
 
----
 
-### Factorialize a number
+**Solution:**
+
 ```
-function factorializer(int) {
-    if(int <= 1) {
-        return 1;
-    } else {
-        return int * factorializer(int - 1);
-    }
+function AlphabeticalOrder(str) {
+    return str.split('').sort().join(')
 }
 ```
-Useful Links:
+
+
+---
+
+## Factorialize a number
+
+*In mathematics, the factorial of a non-negative integer n, denoted by n!, is the product of all positive integers less than or equal to n.*
+*In simple terms, the Factorial of 7 is solved like this:*
+
+**7 * 6 * 5 * 4 * 3 * 2 * 1 = 5,040**
+
+**Example:**
+
+```
+> console.log(factorializer(7));
+
+> 5040
+```
+
+**Useful Links:**
 
 
 [What is Factorial?](https://en.wikipedia.org/wiki/Factorial)
@@ -72,9 +96,23 @@ Useful Links:
 
 [If and Else statements](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else)
 
+
+**Solution:**
+
+
+```
+function factorializer(int) {
+    if(int <= 1) {
+        return 1;
+    } else {
+        return int * factorializer(int - 1);
+    }
+}
+```
+
 ---
 
-### Identify if a number is Odd or Even?
+## Identify if a number is Odd or Even?
 ```
 function oddOrEven(int) {
     let ouput = int % 2;
@@ -92,7 +130,7 @@ Useful Links:
 
 ---
 
-### Eliminate all odd numbers in an array.
+## Eliminate all odd numbers in an array.
 ```
 function evenOnly(arr) {
     let result = arr.filter(arr => arr % 2 == 0);
@@ -108,7 +146,7 @@ Useful Links:
 
 ---
 
-### Return numbers only
+## Return numbers only
 ```
 function numbersOnly(arr) {
     return arr.filter(arr => typeof arr == 'number');
@@ -125,7 +163,7 @@ Useful Links:
 ---
 
 
-### Add up the numbers
+## Add up the numbers
 ```
 function addUp(num) {
     if(num <= 1) {
@@ -146,7 +184,7 @@ Useful Links:
 
 
 
-### Return the Min, Max, Length and Average of an Array
+## Return the Min, Max, Length and Average of an Array
 ```
 function minMaxLengthAverage(arr) {
     
@@ -186,4 +224,4 @@ Please feel free to submit an [Issue](https://github.com/KBPsystem777/JSexercise
 
 ---
 
-##### [MIT License](https://github.com/KBPsystem777/JSexercises/blob/master/LICENSE.md) | Copyright(c) 2018 [Koleen Paunon](https://koleenbp.now.sh)
+#### [MIT License](https://github.com/KBPsystem777/JSexercises/blob/master/LICENSE.md) | Copyright(c) 2018 [Koleen Paunon](https://koleenbp.now.sh)
