@@ -25,7 +25,7 @@ I made this compilation while solving JavaScript algorithms in [FreeCodeCamp](ht
 **Useful Links:**
 
 
-[Math.min](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/min)
+- [Math.min](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/min)
 
 
 **Solution:**
@@ -52,12 +52,12 @@ function findSmallest(arr) {
 **Useful Links:**
 
 
-[Array.sort](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort)
+- [Array.sort](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort)
 
 
-[Array.split](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split)
+- [Array.split](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split)
 
-[Array.join](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/join)
+- [Array.join](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/join)
 
 
 **Solution:**
@@ -88,13 +88,12 @@ function AlphabeticalOrder(str) {
 
 **Useful Links:**
 
+- [What is Factorial?](https://en.wikipedia.org/wiki/Factorial)
 
-[What is Factorial?](https://en.wikipedia.org/wiki/Factorial)
 
+- [Recursion](https://www.youtube.com/watch?v=k7-N8R0-KY4)
 
-[Recursion](https://www.youtube.com/watch?v=k7-N8R0-KY4)
-
-[If and Else statements](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else)
+- [If and Else statements](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else)
 
 
 **Solution:**
@@ -113,57 +112,130 @@ function factorializer(int) {
 ---
 
 ## Identify if a number is Odd or Even?
+
+*A function that lets you know if a number is Even or Odd*
+
+**Example:**
+
+```
+> console.log(oddOrEven(7));
+
+> "Odd"
+```
+
+**Useful Links:**
+
+
+- [Modulo](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Arithmetic_Operators#Remainder_())
+
+
+**Solution:**
+
+
 ```
 function oddOrEven(int) {
     let ouput = int % 2;
     if(output == 0) {
-        return "That number is even"
+        return "Even"
     } else {
-        return "That number is odd"
+        return "Odd"
     }
 }
 ```
-Useful Links:
 
-
-[Modulo](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Arithmetic_Operators#Remainder_())
 
 ---
 
 ## Eliminate all odd numbers in an array.
+
+*Remove all Odd number(s) in an array and return a new array that contains Even numbers only*
+
+**Example:**
+
+```
+> console.log(evenOnly([1, 2, 3, 4, 5, 6]));
+
+> [ 2, 4, 6 ]
+```
+
+**Useful Links:**
+
+- [Array.filter](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter)
+
+- [Modulo](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Arithmetic_Operators#Remainder_())
+
+**Solution:**
+
 ```
 function evenOnly(arr) {
     let result = arr.filter(arr => arr % 2 == 0);
     return result;
 }
 ```
-Useful Links:
-
-
-[Array.filter](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter)
-
-[Modulo](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Arithmetic_Operators#Remainder_())
 
 ---
 
 ## Return numbers only
+
+*Create a function that will accept an array, check the data type of each element. The function will delete string elements and will return a the new array*
+
+**Example:**
+
+```
+> console.log(numbersOnly(['text', 3, 7, 'github', 13, 'dev']));
+
+> [ 3, 7, 13 ]
+
+```
+
+
+**Reference:**
+
+- [Array.filter](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter)
+
+- [typeof](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof)
+
+
+**Solution:**
+
 ```
 function numbersOnly(arr) {
     return arr.filter(arr => typeof arr == 'number');
 };
 
 ```
-Useful Links:
-
-
-[Array.filter](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter)
-
-[typeof](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof)
 
 ---
 
 
 ## Add up the numbers
+
+*Return the sum of a number going back to it's root.* *In other words, the function will work like this:*
+
+**addUp(5);**
+
+// *5 + 4 + 3 + 2 + 1 + 0* = **15**
+
+
+**Example:**
+
+```
+> console.log(addUp(8));
+> 36
+```
+
+**Reference:**
+
+
+- [Recursion](https://www.youtube.com/watch?v=k7-N8R0-KY4)
+
+- [1 + 2 + 3 + 4 + ⋯](https://en.wikipedia.org/wiki/1_%2B_2_%2B_3_%2B_4_%2B_%E2%8B%AF)
+
+
+
+**Solution:**
+
+
 ```
 function addUp(num) {
     if(num <= 1) {
@@ -173,18 +245,49 @@ function addUp(num) {
     }
 }
 ```
-Useful Links:
-
-
-[Recursion](https://www.youtube.com/watch?v=k7-N8R0-KY4)
-
-[1 + 2 + 3 + 4 + ⋯](https://en.wikipedia.org/wiki/1_%2B_2_%2B_3_%2B_4_%2B_%E2%8B%AF)
 
 ---
 
 
 
 ## Return the Min, Max, Length and Average of an Array
+
+*Create a function that will accept an array and do the following:*
+
+- *Get the lowest element*
+
+- *Get the highest element*
+
+- *Get the length of array*
+
+- *Get the Average of all element;*
+
+- *Store these criteria in a new array*
+
+
+**Example:**
+
+```
+> console.log(minMaxLengthAverage([7, 13, 3, 77, 100]));
+
+> [ 3, 100, 5, 40 ]
+```
+
+**Reference:**
+
+
+- [Math.min](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/min)
+
+- [Math.max](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/max)
+
+- [Array.reduce](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce)
+
+- [Array.length](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/length)
+
+
+**Solution:**
+
+
 ```
 function minMaxLengthAverage(arr) {
     
@@ -201,20 +304,8 @@ function minMaxLengthAverage(arr) {
 }
 
 ```
-Useful Links:
-
-
-[Math.min](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/min)
-
-[Math.max](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/max)
-
-[Array.reduce](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce)
-
-[Array.length](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/length)
 
 ---
-
-
 
 
 
