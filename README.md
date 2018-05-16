@@ -12,15 +12,26 @@ I made this compilation while solving JavaScript algorithms in [FreeCodeCamp](ht
 
 ### Find the smallest number in an array
 
+*Create a function that will display the smallest value in the array.*
+
+**Example:**
+
+```
+arr = [30, 45, 60, 7] //should return [7]
+```
+
+**Useful Links:**
+
+
+[Math.min](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/min)
+
+
+**Solution:**
 ```
 function findSmallest(arr) {
     return Math.min(...arr)
 }
 ```
-Useful Links:
-
-
-[Math.min](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/min)
 
 ---
 ### Sort strings by Alphabetical Order
