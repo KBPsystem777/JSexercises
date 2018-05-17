@@ -307,6 +307,55 @@ function minMaxLengthAverage(arr) {
 
 ---
 
+## Sort Numbers in Ascending Order
+
+*`Array.sort()` sorts the **strings** alphabetically. What if we want to sort **numbers** from lowest to highest? Will it produce a correct output?*
+
+**Example:**
+*This is what happen if we apply `Array.sort()` to numbers:*
+
+
+```
+> arr = [45, 34, 23, 12, 7]
+
+> console.log(arr.sort());
+
+> [ 12, 23, 34, 45, 7 ]
+```
+
+*Output is not correct right?, whereas we are expecting this to be the return value:*
+```
+> console.log(sortNumsAscending([7, 13, 3, 77, 100]));
+
+> [ 3, 5, 40, 100 ]
+```
+
+**Reference:**
+
+- [Sorting in JavaScript](http://www.javascriptkit.com/javatutors/arraysort.shtml)
+
+- [Array.sort()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort)
+
+**Solution:**
+
+
+```
+function sortNumsAscending(arr) {
+    let sorter = (a, b) => {
+        return a - b;
+    };
+
+    if(arr == []) {
+        return [];
+    } else if(arr == null) {
+        return [];
+    } else {
+        return arr.sort(sorter);
+    }
+}
+```
+
+---
 
 
 ## Bugs?, Issues?, Contribute?
