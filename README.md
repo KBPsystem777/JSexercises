@@ -357,6 +357,55 @@ function sortNumsAscending(arr) {
 
 ---
 
+## Convert Numbers in Roman Numerals
+
+*Convert the given number to a Roman Numeral*
+
+**Example:**
+
+```
+> romanNumbers(1989);
+
+> MCMLXXXIX
+
+```
+
+**Reference:**
+
+- [Roman Numerals](https://www.mathsisfun.com/roman-numerals.html)
+
+- [Array.join()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/join)
+
+- [Array.indexOf()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf)
+
+- [Array.splice()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice)
+
+
+**Solution:**
+
+
+```
+function romanNumbers(num) {
+
+    let values = [1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1];
+    let romanNumerals = ['M', 'CM', 'D', 'CD', 'C', 'XC', 'L', 'XL', 'X', 'IX', 'V', 'IV', 'I'];
+    
+    let roman = '';
+
+    for(i =0; i<values.length; i++) {
+        while(values[i] <= num) {
+            roman += romanNumerals[i];
+            num -= values[i];
+        };
+    };
+    return roman;
+};
+
+console.log(romanNumbers(1989));
+
+```
+
+---
 
 ## Bugs?, Issues?, Contribute?
 
