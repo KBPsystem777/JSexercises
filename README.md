@@ -1,3 +1,5 @@
+[![Open Source Helpers](https://www.codetriage.com/kbpsystem777/jsexercises/badges/users.svg)](https://www.codetriage.com/kbpsystem777/jsexercises)
+
 JavaScript Exercises
 ======
 Solutions and explanation to JS exercises.
@@ -408,6 +410,11 @@ console.log(romanNumbers(1989));
 ---
 
 ## Bugs?, Issues?, Contribute?
+
+
+We're on CodeTriage!
+[![Open Source Helpers](https://www.codetriage.com/kbpsystem777/jsexercises/badges/users.svg)](https://www.codetriage.com/kbpsystem777/jsexercises)
+
 
 Please feel free to submit an [Issue](https://github.com/KBPsystem777/JSexercises/issues/new) or [Pull Requests](https://github.com/KBPsystem777/JSexercises/pulls)
 
