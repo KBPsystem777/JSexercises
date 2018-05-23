@@ -2,11 +2,18 @@
   "name": "JSexercises",
   "version": "1.0.0",
   "description": "Simple solutions and resources to help beginners in solving JavaScript algorithm exercises",
-  "main": "",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": ["javascript", "algorithm", "exercises", "code-newbie", "learn-to-code"],
+  "keywords": [
+    "javascript",
+    "algorithm",
+    "exercises",
+    "code-newbie",
+    "learn-to-code",
+    "beginner-friendly"
+  ],
   "author": "Koleen Paunon",
   "license": "MIT",
   "homepage": "https://kbpsystem777.github.io/JSexercises/",
@@ -17,5 +24,8 @@
   "bugs": {
     "url": "https://github.com/KBPsystem777/JSexercises/issues",
     "email": "koleen.bp@outlook.com"
+  },
+  "dependencies": {
+    "express": "^4.16.3"
   }
 }
