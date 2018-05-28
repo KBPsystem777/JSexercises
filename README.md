@@ -407,6 +407,47 @@ console.log(romanNumbers(1989));
 
 ```
 
+
+## Make a Triangle out of '#'
+
+*Form a triangle using hash tags*
+
+**Example:**
+
+```
+> #
+
+> ##
+
+> ###
+
+> ####
+
+> #####
+
+> ######
+
+> #######
+
+```
+
+**Reference:**
+
+- [Loop]()
+
+
+**Solution:**
+
+
+```
+
+for(x = '#'; x.lenght <= 7; x += x) {
+    console.log(x);
+};
+
+```
+
+
 ---
 
 ## Bugs?, Issues?, Contribute?
