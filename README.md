@@ -408,7 +408,7 @@ console.log(romanNumbers(1989));
 ```
 
 
-## Make a Triangle out of '#'
+## Looping a Triangle
 
 *Form a triangle using hash tags*
 
@@ -416,35 +416,27 @@ console.log(romanNumbers(1989));
 
 ```
 > #
-
 > ##
-
 > ###
-
 > ####
-
 > #####
-
 > ######
-
 > #######
 
 ```
 
 **Reference:**
 
-- [Loop]()
+- [Loop](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Loops_and_iteration)
 
 
 **Solution:**
 
 
 ```
-
-for(x = '#'; x.lenght <= 7; x += x) {
+for(x = '#'; x.length <= 7; x += x) {
     console.log(x);
-};
-
+}
 ```
 
 
