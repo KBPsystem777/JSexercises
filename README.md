@@ -407,6 +407,39 @@ console.log(romanNumbers(1989));
 
 ```
 
+
+## Looping a Triangle
+
+*Form a triangle using hash tags*
+
+**Example:**
+
+```
+> #
+> ##
+> ###
+> ####
+> #####
+> ######
+> #######
+
+```
+
+**Reference:**
+
+- [Loop](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Loops_and_iteration)
+
+
+**Solution:**
+
+
+```
+for(x = '#'; x.length <= 7; x += x) {
+    console.log(x);
+}
+```
+
+
 ---
 
 ## Bugs?, Issues?, Contribute?
