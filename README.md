@@ -410,6 +410,40 @@ console.log(romanNumbers(1989));
 ```
 
 
+## Absolutely Sum
+
+*Return the absolute sum of all the array elements*
+
+**Example:**
+
+```
+> getAbsSum([-1, -3, -5, -4, -10, 0]);
+> 23    
+```
+
+**Reference:**
+
+- [Array.prototype.reduce](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce)
+
+- [Math.abs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/abs)
+
+**Solution:**
+
+
+```
+function getAbsSum(arr) {
+    const reducer = (acc, currVal) => {
+        return acc + currVal;
+    };
+
+    return Math.abs(arr.reduce(reducer));
+}
+```
+
+
+---
+
+
 ## Looping a Triangle
 
 *Form a triangle using hash tags*
@@ -441,13 +475,14 @@ for(x = '#'; x.length <= 7; x += x) {
 }
 ```
 
-
 ---
 
-## Bugs?, Issues?, Contribute?
+
+## Bugs, Issues and want to Contribute?
 
 
 We're on CodeTriage!
+
 [![Open Source Helpers](https://www.codetriage.com/kbpsystem777/jsexercises/badges/users.svg)](https://www.codetriage.com/kbpsystem777/jsexercises)
 
 
