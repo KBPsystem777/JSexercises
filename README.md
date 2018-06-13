@@ -477,6 +477,36 @@ for(x = '#'; x.length <= 7; x += x) {
 
 ---
 
+## Count the number of Words
+
+*Return how many words was given*
+
+**Example:**
+
+```
+> countWords('hello from kbpsystem!');
+> 3
+```
+
+**Reference:**
+
+- [String.prototype.split](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split)
+
+- [Array.length](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Array/length)
+
+
+**Solution:**
+
+
+```
+function countWords(str) {
+    return str.split(' ').length;
+};
+```
+
+---
+
+
 
 ## Bugs, Issues and want to Contribute?
 
