@@ -506,6 +506,43 @@ function countWords(str) {
 
 ---
 
+## Multiply by Length
+
+*Multiply all elements in an array by it's length*
+
+**Example:**
+
+```
+> MultiplyByLength([4,1,1]);
+> [12, 3, 3]
+```
+
+**Reference:**
+
+- [for](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for)
+
+- [Array.length](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Array/length)
+
+- [Array.prototype.push](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/push)
+
+- [Array.prototype.map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map)
+
+
+**Solution:**
+
+
+```
+function MultiplyByLength(arr) {
+	let len = arr.length;
+	for (var i = 0; i < len; i++) {
+		arr[i] = arr[i] * len;
+
+	}
+	return arr;
+};
+```
+
+---
 
 
 ## Bugs, Issues and want to Contribute?
