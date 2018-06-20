@@ -530,13 +530,11 @@ function countWords(str) {
 
 **Solution:**
 
-
 ```
 function MultiplyByLength(arr) {
 	let len = arr.length;
-	for (var i = 0; i < len; i++) {
+	for (i = 0; i < len; i++) {
 		arr[i] = arr[i] * len;
-
 	}
 	return arr;
 };
