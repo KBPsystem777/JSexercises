@@ -1,0 +1,27 @@
+{
+  "name": "exercises",
+  "version": "1.0.0",
+  "description": "Solutions and explanation to JS exercises.",
+  "main": "server.js",
+  "dependencies": {
+    "express": "@latest"
+  },
+  "devDependencies": {
+    "nodemon": "@latest"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KBPsystem777/JSexercises.git"
+  },
+  "keywords": [],
+  "author": "Koleen BP",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KBPsystem777/JSexercises/issues"
+  },
+  "homepage": "https://github.com/KBPsystem777/JSexercises#readme"
+}
