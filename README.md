@@ -1,6 +1,6 @@
 [![Open Source Helpers](https://www.codetriage.com/kbpsystem777/jsexercises/badges/users.svg)](https://www.codetriage.com/kbpsystem777/jsexercises)
 
-![](https://raw.githubusercontent.com/KBPsystem777/JSexercises/master/img/jsexercises.png)
+![](public/img/jsexercises.png)
 
 JavaScript Exercises
 ======
