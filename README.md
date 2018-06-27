@@ -577,6 +577,40 @@ function checkEnding(str1, str2) {
 ```
 
 ---
+## Repeating Letters
+
+*Create a function that will repeat each string character two times*
+
+**Example:**
+
+```
+> console.log(doubleChar('exercise'));
+> eexxeerrcciissee
+```
+
+**Reference:**
+
+- [*Array.prototype.split*](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split) The `split()` method splits a String object into an array of strings by separating the string into substrings, using a specified separator string to determine where to make each split.
+
+- [*Array.prototype.map*](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map) The `map()` method creates a new array with the results of calling a provided function on every element in the calling array.
+
+- [*Array.prototype.join*](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/join) This method joins all elements of an array (or an array-like object) into a string and returns this string.
+
+
+**Solution:**
+
+```
+function doubleChar(str) {
+	let x = str.split('')
+	return x.map(x => x.repeat(2)).join('');
+}
+```
+
+**Explanation:**
+*On the solution above, first we apply split method on the string argument and then store it in a variable called `x`.*
+*Next, we use the map function in order to performa duplication process on each element of the string, which was considered as array on this case because we just applied a split method on the string. Once duplication process is done, we call the `join()` method. Applying this method will convert the array back to being a string again but this time with a new duplicated values*
+
+---
 
 
 ## Bugs, Issues and want to Contribute?
