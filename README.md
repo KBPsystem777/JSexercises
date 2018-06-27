@@ -541,6 +541,42 @@ function MultiplyByLength(arr) {
 ```
 
 ---
+## Ends With "xxx"
+
+*Create a function that will check if str1 ends with the characters in str2*
+
+**Rules:**
+
+- Take two strings as argument
+
+- Determine if second string matches ending of the first string
+
+- Return boolean value
+
+
+**Example:**
+
+```
+> console.log(checkEnding("samurai", "zi"));
+> false
+```
+
+**Reference:**
+
+- [String.prototype.endsWith()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/endsWith) method determines whether a string ends with the characters of a specified string, returning true or false as appropriate.
+
+- [Array.prototype.join](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/join) method joins all elements of an array (or an array-like object) into a string and returns this string.
+
+
+**Solution:**
+
+```
+function checkEnding(str1, str2) {
+	return str1.endsWith(str2)
+}
+```
+
+---
 
 
 ## Bugs, Issues and want to Contribute?
