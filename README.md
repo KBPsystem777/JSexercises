@@ -612,6 +612,36 @@ function doubleChar(str) {
 
 ---
 
+## Find the correct Index location
+
+*Return the index location of an element from a given array*
+
+**Example:**
+
+```
+> console.log(findIndex(['github', 'gitlab', 'bitbucket', 'apollo'], 'gitlab'));
+> 1
+```
+
+**Reference:**
+
+- [Array.Prototype.indexOf()](https://developer.mozilla.org/it/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf) The indexOf() method returns the first index at which a given element can be found in the array, or -1 if it is not present. Note that this method is not widely supported in all browsers so a **Polyfill is needed**.
+
+**Solution:**
+
+```
+function findIndex(arr, element) {
+    return arr.indexOf(element);
+}
+```
+
+**Explanation:**
+*`findIndex` function takes two arguments. First is the array to be monitored and then the last is the element on the array that needs to be located.*
+*JavaScript has a built in method called `indexOf()` and we used that in order to locate the index location of a certain element in an array.*
+
+
+---
+
 
 ## Bugs, Issues and want to Contribute?
 
