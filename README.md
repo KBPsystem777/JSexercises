@@ -614,7 +614,7 @@ function doubleChar(str) {
 
 ## Find the correct Index location
 
-*Return the index location of an element from a given array*
+*Return the index location of an element from a given array. First argument is the array you'd like to search and the second one is the element (either string/number) to look for.*
 
 **Example:**
 
@@ -637,7 +637,7 @@ function findIndex(arr, element) {
 
 **Explanation:**
 *`findIndex` function takes two arguments. First is the array to be monitored and then the last is the element on the array that needs to be located.*
-*JavaScript has a built in method called `indexOf()` and we used that in order to locate the index location of a certain element in an array.*
+*JavaScript has a built in method called `indexOf()` and we used that in order to locate the index location of a certain element in an array. This method loops through the array locating the index value of an element*
 
 
 ---
