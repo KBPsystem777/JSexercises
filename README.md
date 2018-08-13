@@ -12,9 +12,32 @@ I made this compilation while solving JavaScript algorithms in [FreeCodeCamp](ht
 
 ------
 
+# Table Of Contents
+
+- [Find the Smallest number in an Array](#smallest-number)
+- [Sort Strings Alphabetically](#alphabetically-sorted)
+- [Factorialize a Number](#factorialize)
+- [Indentify if a Number is Odd or Even](#odd-or-even)
+- [Eliminating the Odds](#odd-elimination)
+- [Numbers only](#numbers-only)
+- [Add all the numbers](#adding-numbers)
+- [Min, Max, Length and Average](#min-max-len-ave)
+- [Sort in Ascending Order](#sort-ascend)
+- [Number to Roman Numerals (*from FreeCodeCamp*)](#number-to-roman)
+- [Absolutely Sum](#abs-sum)
+- [Triangle Loop (*from Eloquent JavaScript*)](#triangle-loop)
+- [Words Count](#words-count)
+- [Multiply by Length](#multiply-by-lenght)
+- [Ends with xxx](#ends-with-xxx)
+- [Repeating Letters](-#repeating-letters)
+- [Index Location](#locate-index)
+- [**License**](https://github.com/KBPsystem777/JSexercises/blob/master/LICENSE.md)
+
+------
 
 
-## Find the smallest number in an array
+
+## [Find the smallest number in an array](#smallest-number)
 
 *Create a function that will display the smallest value in the array.*
 
@@ -40,7 +63,7 @@ function findSmallest(arr) {
 ```
 
 ---
-## Sort strings by Alphabetical Order
+## [Sort strings by Alphabetical Order](#alphabetically-sorted)
 
 *Function that will return your string in Alphabetical order* 
 
@@ -75,7 +98,7 @@ function AlphabeticalOrder(str) {
 
 ---
 
-## Factorialize a number
+## [Factorialize a number](#factorialize)
 
 *In mathematics, the factorial of a non-negative integer n, denoted by n!, is the product of all positive integers less than or equal to n.*
 *In simple terms, the Factorial of 7 is solved like this:*
@@ -115,7 +138,7 @@ function factorializer(int) {
 
 ---
 
-## Identify if a number is Odd or Even?
+## [Identify if a number is Odd or Even?](#odd-or-even)
 
 *A function that lets you know if a number is Even or Odd*
 
@@ -150,7 +173,7 @@ function oddOrEven(int) {
 
 ---
 
-## Eliminate all odd numbers in an array.
+## [Eliminate all odd numbers in an array.](#odd-elimination)
 
 *Remove all Odd number(s) in an array and return a new array that contains Even numbers only*
 
@@ -179,7 +202,7 @@ function evenOnly(arr) {
 
 ---
 
-## Return numbers only
+## [Return numbers only](#numbers-only)
 
 *Create a function that will accept an array, check the data type of each element. The function will delete string elements and will return a the new array*
 
@@ -212,7 +235,7 @@ function numbersOnly(arr) {
 ---
 
 
-## Add up the numbers
+## [Add up the numbers](#adding-numbers)
 
 *Return the sum of a number going back to it's root.* *In other words, the function will work like this:*
 
@@ -254,7 +277,7 @@ function addUp(num) {
 
 
 
-## Return the Min, Max, Length and Average of an Array
+## [Return the Min, Max, Length and Average of an Array](#min-max-len-ave)
 
 *Create a function that will accept an array and do the following:*
 
@@ -311,7 +334,7 @@ function minMaxLengthAverage(arr) {
 
 ---
 
-## Sort Numbers in Ascending Order
+##  [Sort Numbers in Ascending Order](#sort-ascend)
 
 *`Array.sort()` sorts the **strings** alphabetically. What if we want to sort **numbers** from lowest to highest? Will it produce a correct output?*
 
@@ -361,7 +384,7 @@ function sortNumsAscending(arr) {
 
 ---
 
-## Convert Numbers in Roman Numerals
+## [Convert Numbers in Roman Numerals](#number-to-roman)
 
 *Convert the given number to a Roman Numeral*
 
@@ -410,7 +433,7 @@ console.log(romanNumbers(1989));
 ```
 
 
-## Absolutely Sum
+## [Absolutely Sum](#abs-sum)
 
 *Return the absolute sum of all the array elements*
 
@@ -444,7 +467,7 @@ function getAbsSum(arr) {
 ---
 
 
-## Looping a Triangle
+## [Looping a Triangle](#triangle-loop)
 
 *Form a triangle using hash tags*
 
@@ -477,7 +500,7 @@ for(x = '#'; x.length <= 7; x += x) {
 
 ---
 
-## Count the number of Words
+## [Count the number of Words](#words-count)
 
 *Return how many words was given*
 
@@ -506,7 +529,7 @@ function countWords(str) {
 
 ---
 
-## Multiply by Length
+## [Multiply by Length](#multiply-by-length)
 
 *Multiply all elements in an array by it's length*
 
@@ -541,7 +564,7 @@ function MultiplyByLength(arr) {
 ```
 
 ---
-## Ends With "xxx"
+## [Ends With "xxx"](#ends-with-xxx)
 
 *Create a function that will check if str1 ends with the characters in str2*
 
@@ -577,7 +600,7 @@ function checkEnding(str1, str2) {
 ```
 
 ---
-## Repeating Letters
+## [Repeating Letters](#repeating-letters)
 
 *Create a function that will repeat each string character two times*
 
@@ -612,7 +635,7 @@ function doubleChar(str) {
 
 ---
 
-## Find the correct Index location
+## [Find the correct Index location](#locate-index)
 
 *Return the index location of an element from a given array. First argument is the array you'd like to search and the second one is the element (either string/number) to look for.*
 
