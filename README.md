@@ -1,4 +1,4 @@
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![Open Source Helpers](https://www.codetriage.com/kbpsystem777/jsexercises/badges/users.svg)](https://www.codetriage.com/kbpsystem777/jsexercises)
+[![License: CC0-1.0](https://img.shields.io/badge/License-CC0%201.0-lightgrey.svg)](http://creativecommons.org/publicdomain/zero/1.0/) [![Open Source Helpers](https://www.codetriage.com/kbpsystem777/jsexercises/badges/users.svg)](https://www.codetriage.com/kbpsystem777/jsexercises)
 
 ![](public/img/jsexercises.png)
 
