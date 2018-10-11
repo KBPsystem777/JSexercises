@@ -89,7 +89,7 @@ function findSmallest(arr) {
 
 ```javascript
 function AlphabeticalOrder(str) {
-    return str.split('').sort().join(')
+    return str.split('').sort().join('')
 }
 ```
 
