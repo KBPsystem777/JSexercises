@@ -43,9 +43,8 @@ I made this compilation while solving JavaScript algorithms in [FreeCodeCamp](ht
 
 **Example:**
 
-```
+```javascript
 > console.log(findSmallest([30, 45, 60, 7]));
-
 > 1
 ```
 
@@ -56,7 +55,7 @@ I made this compilation while solving JavaScript algorithms in [FreeCodeCamp](ht
 
 
 **Solution:**
-```
+```javascript
 function findSmallest(arr) {
     return Math.min(...arr)
 }
@@ -69,9 +68,8 @@ function findSmallest(arr) {
 
 **Example:**
 
-```
+```javascript
 > console.log(AlphabeticalOrder('hello'));
-
 > "ehllo"
 ```
 
@@ -89,7 +87,7 @@ function findSmallest(arr) {
 
 **Solution:**
 
-```
+```javascript
 function AlphabeticalOrder(str) {
     return str.split('').sort().join(')
 }
@@ -107,9 +105,8 @@ function AlphabeticalOrder(str) {
 
 **Example:**
 
-```
+```javascript
 > console.log(factorializer(7));
-
 > 5040
 ```
 
@@ -126,7 +123,7 @@ function AlphabeticalOrder(str) {
 **Solution:**
 
 
-```
+```javascript
 function factorializer(int) {
     if(int <= 1) {
         return 1;
@@ -144,9 +141,8 @@ function factorializer(int) {
 
 **Example:**
 
-```
+```javascript
 > console.log(oddOrEven(7));
-
 > "Odd"
 ```
 
@@ -159,7 +155,7 @@ function factorializer(int) {
 **Solution:**
 
 
-```
+```javascript
 function oddOrEven(int) {
     let ouput = int % 2;
     if(output == 0) {
@@ -179,9 +175,8 @@ function oddOrEven(int) {
 
 **Example:**
 
-```
+```javascript
 > console.log(evenOnly([1, 2, 3, 4, 5, 6]));
-
 > [ 2, 4, 6 ]
 ```
 
@@ -193,7 +188,7 @@ function oddOrEven(int) {
 
 **Solution:**
 
-```
+```javascript
 function evenOnly(arr) {
     let result = arr.filter(arr => arr % 2 == 0);
     return result;
@@ -208,11 +203,9 @@ function evenOnly(arr) {
 
 **Example:**
 
-```
+```javascript
 > console.log(numbersOnly(['text', 3, 7, 'github', 13, 'dev']));
-
 > [ 3, 7, 13 ]
-
 ```
 
 
@@ -225,11 +218,10 @@ function evenOnly(arr) {
 
 **Solution:**
 
-```
+```javascript
 function numbersOnly(arr) {
     return arr.filter(arr => typeof arr == 'number');
 };
-
 ```
 
 ---
@@ -246,7 +238,7 @@ function numbersOnly(arr) {
 
 **Example:**
 
-```
+```javascript
 > console.log(addUp(8));
 > 36
 ```
@@ -263,7 +255,7 @@ function numbersOnly(arr) {
 **Solution:**
 
 
-```
+```javascript
 function addUp(num) {
     if(num <= 1) {
         return num;
@@ -294,9 +286,8 @@ function addUp(num) {
 
 **Example:**
 
-```
+```javascript
 > console.log(minMaxLengthAverage([7, 13, 3, 77, 100]));
-
 > [ 3, 100, 5, 40 ]
 ```
 
@@ -315,7 +306,7 @@ function addUp(num) {
 **Solution:**
 
 
-```
+```javascript
 function minMaxLengthAverage(arr) {
     
     const min = Math.min(...arr);
@@ -329,7 +320,6 @@ function minMaxLengthAverage(arr) {
     //Return output
     return [min, max, len, average];
 }
-
 ```
 
 ---
@@ -342,18 +332,15 @@ function minMaxLengthAverage(arr) {
 *This is what happen if we apply `Array.sort()` to numbers:*
 
 
-```
+```javascript
 > arr = [45, 34, 23, 12, 7]
-
 > console.log(arr.sort());
-
 > [ 12, 23, 34, 45, 7 ]
 ```
 
 *Output is not correct right?, whereas we are expecting this to be the return value:*
-```
+```javascript
 > console.log(sortNumsAscending([7, 13, 3, 77, 100]));
-
 > [ 3, 5, 40, 100 ]
 ```
 
@@ -366,7 +353,7 @@ function minMaxLengthAverage(arr) {
 **Solution:**
 
 
-```
+```javascript
 function sortNumsAscending(arr) {
     let sorter = (a, b) => {
         return a - b;
@@ -390,11 +377,9 @@ function sortNumsAscending(arr) {
 
 **Example:**
 
-```
+```javascript
 > romanNumbers(1989);
-
 > MCMLXXXIX
-
 ```
 
 **Reference:**
@@ -411,7 +396,7 @@ function sortNumsAscending(arr) {
 **Solution:**
 
 
-```
+```javascript
 function romanNumbers(num) {
 
     let values = [1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1];
@@ -429,7 +414,6 @@ function romanNumbers(num) {
 };
 
 console.log(romanNumbers(1989));
-
 ```
 
 
@@ -439,7 +423,7 @@ console.log(romanNumbers(1989));
 
 **Example:**
 
-```
+```javascript
 > getAbsSum([-1, -3, -5, -4, -10, 0]);
 > 23    
 ```
@@ -453,7 +437,7 @@ console.log(romanNumbers(1989));
 **Solution:**
 
 
-```
+```javascript
 function getAbsSum(arr) {
     const reducer = (acc, currVal) => {
         return acc + currVal;
@@ -473,7 +457,7 @@ function getAbsSum(arr) {
 
 **Example:**
 
-```
+```javascript
 > #
 > ##
 > ###
@@ -481,7 +465,6 @@ function getAbsSum(arr) {
 > #####
 > ######
 > #######
-
 ```
 
 **Reference:**
@@ -492,7 +475,7 @@ function getAbsSum(arr) {
 **Solution:**
 
 
-```
+```javascript
 for(x = '#'; x.length <= 7; x += x) {
     console.log(x);
 }
@@ -506,7 +489,7 @@ for(x = '#'; x.length <= 7; x += x) {
 
 **Example:**
 
-```
+```javascript
 > countWords('hello from kbpsystem!');
 > 3
 ```
@@ -521,7 +504,7 @@ for(x = '#'; x.length <= 7; x += x) {
 **Solution:**
 
 
-```
+```javascript
 function countWords(str) {
     return str.split(' ').length;
 };
@@ -535,7 +518,7 @@ function countWords(str) {
 
 **Example:**
 
-```
+```javascript
 > MultiplyByLength([4,1,1]);
 > [12, 3, 3]
 ```
@@ -553,7 +536,7 @@ function countWords(str) {
 
 **Solution:**
 
-```
+```javascript
 function MultiplyByLength(arr) {
 	let len = arr.length;
 	for (i = 0; i < len; i++) {
@@ -579,7 +562,7 @@ function MultiplyByLength(arr) {
 
 **Example:**
 
-```
+```javascript
 > console.log(checkEnding("samurai", "zi"));
 > false
 ```
@@ -593,7 +576,7 @@ function MultiplyByLength(arr) {
 
 **Solution:**
 
-```
+```javascript
 function checkEnding(str1, str2) {
 	return str1.endsWith(str2)
 }
@@ -606,7 +589,7 @@ function checkEnding(str1, str2) {
 
 **Example:**
 
-```
+```javascript
 > console.log(doubleChar('exercise'));
 > eexxeerrcciissee
 ```
@@ -622,7 +605,7 @@ function checkEnding(str1, str2) {
 
 **Solution:**
 
-```
+```javascript
 function doubleChar(str) {
 	let x = str.split('')
 	return x.map(x => x.repeat(2)).join('');
@@ -641,7 +624,7 @@ function doubleChar(str) {
 
 **Example:**
 
-```
+```javascript
 > console.log(findIndex(['github', 'gitlab', 'bitbucket', 'apollo'], 'gitlab'));
 > 1
 ```
@@ -652,7 +635,7 @@ function doubleChar(str) {
 
 **Solution:**
 
-```
+```javascript
 function findIndex(arr, element) {
     return arr.indexOf(element);
 }
