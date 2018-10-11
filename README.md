@@ -1,6 +1,6 @@
 [![License: CC0-1.0](https://img.shields.io/badge/License-CC0%201.0-lightgrey.svg)](http://creativecommons.org/publicdomain/zero/1.0/) [![Open Source Helpers](https://www.codetriage.com/kbpsystem777/jsexercises/badges/users.svg)](https://www.codetriage.com/kbpsystem777/jsexercises)
 
-![JSEx Logo](https://github.com/KBPsystem777/JSexercises/blob/master/jsexercises.png?raw=true)
+![JSEx Logo](/jsexercises.png)
 
 JavaScript Exercises
 ======
