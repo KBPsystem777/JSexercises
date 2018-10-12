@@ -31,6 +31,7 @@ I made this compilation while solving JavaScript algorithms in [FreeCodeCamp](ht
 - [Ends with xxx](#ends-with-xxx)
 - [Repeating Letters](#repeating-letters)
 - [Index Location](#find-the-correct-index-location)
+- [Do ... while loop](#do-run-this-function-while)
 - [**License**](https://github.com/KBPsystem777/JSexercises/blob/master/LICENSE.md)
 
 ------
@@ -645,6 +646,47 @@ function findIndex(arr, element) {
 *`findIndex` function takes two arguments. First is the array to be monitored and then the last is the element on the array that needs to be located.*
 *JavaScript has a built in method called `indexOf()` and we used that in order to locate the index location of a certain element in an array. This method loops through the array locating the index value of an element*
 
+---
+## [Do run this function while](#do-run-this-function-while)
+
+This exercise is courtesy of [FreeCodeCamp](https://learn.freecodecamp.org/javascript-algorithms-and-data-structures/basic-javascript/iterate-with-javascript-do---while-loops)
+
+*This exercise is an implementation of [do while](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/do...while) statement. Our goal here is to keep on running a function/statement, set a paramater and as soon as the result of the parameter evaluates to `false`, the function/statement execution will stop*
+
+**Example:**
+
+```javascript
+var result = "";
+var i = 0;
+
+do {
+  i = i + 1;
+  result = result + i;
+} while (i < 5);
+
+console.log(result);
+// expected result: "12345"
+```
+
+**Reference:**
+
+- [do while](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/do...while) Definition from our friend in Mozilla:
+    > The do...while statement creates a loop that executes a specified statement until the test condition evaluates to false. The condition is evaluated after executing the statement, resulting in the specified statement executing at least once.
+
+**Solution:**
+
+```javascript
+// Setup
+> var myArray = [];
+> var i = 10;
+
+> // Only change code below this line.
+> do {
+    myArray.push(i);
+    i++;
+    console.log(i)
+} while (i < 11)
+```
 
 ---
 
