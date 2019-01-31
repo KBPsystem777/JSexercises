@@ -2,15 +2,15 @@
 
 ![JSEx Logo](/jsexercises.png)
 
-JavaScript Exercises
-======
+# JavaScript Exercises
+
 Solutions and explanation to JS exercises.
 
 This is not a cheat sheet!
 
 I made this compilation while solving JavaScript algorithms in [FreeCodeCamp](https://www.freecodecamp.org) and [Edabit](https://edabit.com/). I thought this must be a helpful guide for people trying to get up and running in web development paradigm.
 
-------
+---
 
 # Table Of Contents
 
@@ -23,9 +23,9 @@ I made this compilation while solving JavaScript algorithms in [FreeCodeCamp](ht
 - [Add all the numbers](#add-up-the-numbers)
 - [Min, Max, Length and Average](#return-the-min-max-length-and-average-of-an-array)
 - [Sort in Ascending Order](#sort-numbers-in-ascending-number)
-- [Number to Roman Numerals (*from FreeCodeCamp*)](#convert-numbers-in-roman-numerals)
+- [Number to Roman Numerals (_from FreeCodeCamp_)](#convert-numbers-in-roman-numerals)
 - [Absolutely Sum](#absolutely-sum)
-- [Triangle Loop (*from Eloquent JavaScript*)](#looping-a-triangle)
+- [Triangle Loop (_from Eloquent JavaScript_)](#looping-a-triangle)
 - [Words Count](#count-the-number-of-words)
 - [Multiply by Length](#multiply-by-length)
 - [Ends with xxx](#ends-with-xxx)
@@ -34,13 +34,11 @@ I made this compilation while solving JavaScript algorithms in [FreeCodeCamp](ht
 - [Do ... while loop](#do-run-this-function-while)
 - [**License**](https://github.com/KBPsystem777/JSexercises/blob/master/LICENSE.md)
 
-------
-
-
+---
 
 ## [Find the smallest number in an array](#smallest-number)
 
-*Create a function that will display the smallest value in the array.*
+_Create a function that will display the smallest value in the array._
 
 **Example:**
 
@@ -51,21 +49,21 @@ I made this compilation while solving JavaScript algorithms in [FreeCodeCamp](ht
 
 **Reference:**
 
-
 - [Math.min](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/min)
 
-
 **Solution:**
+
 ```javascript
 function findSmallest(arr) {
-    return Math.min(...arr)
+  return Math.min(...arr);
 }
 ```
 
 ---
+
 ## [Sort strings by Alphabetical Order](#alphabetically-sorted)
 
-*Function that will return your string in Alphabetical order* 
+_Function that will return your string in Alphabetical order_
 
 **Example:**
 
@@ -74,35 +72,33 @@ function findSmallest(arr) {
 > "ehllo"
 ```
 
-
 **Reference:**
-
 
 - [Array.sort](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort)
 
+* [Array.split](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split)
 
-- [Array.split](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split)
-
-- [Array.join](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/join)
-
+* [Array.join](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/join)
 
 **Solution:**
 
 ```javascript
 function AlphabeticalOrder(str) {
-    return str.split('').sort().join('')
+  return str
+    .split("")
+    .sort()
+    .join("");
 }
 ```
-
 
 ---
 
 ## [Factorialize a number](#factorialize)
 
-*In mathematics, the factorial of a non-negative integer n, denoted by n!, is the product of all positive integers less than or equal to n.*
-*In simple terms, the Factorial of 7 is solved like this:*
+_In mathematics, the factorial of a non-negative integer n, denoted by n!, is the product of all positive integers less than or equal to n._
+_In simple terms, the Factorial of 7 is solved like this:_
 
-**7 * 6 * 5 * 4 * 3 * 2 * 1 = 5,040**
+**7 _ 6 _ 5 _ 4 _ 3 _ 2 _ 1 = 5,040**
 
 **Example:**
 
@@ -115,22 +111,19 @@ function AlphabeticalOrder(str) {
 
 - [What is Factorial?](https://en.wikipedia.org/wiki/Factorial)
 
+* [Recursion](https://www.youtube.com/watch?v=k7-N8R0-KY4)
 
-- [Recursion](https://www.youtube.com/watch?v=k7-N8R0-KY4)
-
-- [If and Else statements](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else)
-
+* [If and Else statements](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else)
 
 **Solution:**
 
-
 ```javascript
 function factorializer(int) {
-    if(int <= 1) {
-        return 1;
-    } else {
-        return int * factorializer(int - 1);
-    }
+  if (int <= 1) {
+    return 1;
+  } else {
+    return int * factorializer(int - 1);
+  }
 }
 ```
 
@@ -138,7 +131,7 @@ function factorializer(int) {
 
 ## [Identify if a number is Odd or Even?](#odd-or-even)
 
-*A function that lets you know if a number is Even or Odd*
+_A function that lets you know if a number is Even or Odd_
 
 **Example:**
 
@@ -149,30 +142,26 @@ function factorializer(int) {
 
 **Reference:**
 
-
-- [Modulo](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Arithmetic_Operators#Remainder_())
-
+- [Modulo](<https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Arithmetic_Operators#Remainder_()>)
 
 **Solution:**
 
-
 ```javascript
 function oddOrEven(int) {
-    let ouput = int % 2;
-    if(output == 0) {
-        return "Even"
-    } else {
-        return "Odd"
-    }
+  let ouput = int % 2;
+  if (output == 0) {
+    return "Even";
+  } else {
+    return "Odd";
+  }
 }
 ```
-
 
 ---
 
 ## [Eliminate all odd numbers in an array.](#odd-elimination)
 
-*Remove all Odd number(s) in an array and return a new array that contains Even numbers only*
+_Remove all Odd number(s) in an array and return a new array that contains Even numbers only_
 
 **Example:**
 
@@ -185,14 +174,14 @@ function oddOrEven(int) {
 
 - [Array.filter](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter)
 
-- [Modulo](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Arithmetic_Operators#Remainder_())
+- [Modulo](<https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Arithmetic_Operators#Remainder_()>)
 
 **Solution:**
 
 ```javascript
 function evenOnly(arr) {
-    let result = arr.filter(arr => arr % 2 == 0);
-    return result;
+  let result = arr.filter(arr => arr % 2 == 0);
+  return result;
 }
 ```
 
@@ -200,7 +189,7 @@ function evenOnly(arr) {
 
 ## [Return numbers only](#numbers-only)
 
-*Create a function that will accept an array, check the data type of each element. The function will delete string elements and will return a the new array*
+_Create a function that will accept an array, check the data type of each element. The function will delete string elements and will return a the new array_
 
 **Example:**
 
@@ -209,33 +198,29 @@ function evenOnly(arr) {
 > [ 3, 7, 13 ]
 ```
 
-
 **Reference:**
 
 - [Array.filter](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter)
 
 - [typeof](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof)
 
-
 **Solution:**
 
 ```javascript
 function numbersOnly(arr) {
-    return arr.filter(arr => typeof arr == 'number');
-};
+  return arr.filter(arr => typeof arr == "number");
+}
 ```
 
 ---
 
-
 ## [Add up the numbers](#adding-numbers)
 
-*Return the sum of a number going back to it's root.* *In other words, the function will work like this:*
+_Return the sum of a number going back to it's root._ _In other words, the function will work like this:_
 
 **addUp(5);**
 
-// *5 + 4 + 3 + 2 + 1 + 0* = **15**
-
+// _5 + 4 + 3 + 2 + 1 + 0_ = **15**
 
 **Example:**
 
@@ -246,44 +231,37 @@ function numbersOnly(arr) {
 
 **Reference:**
 
-
 - [Recursion](https://www.youtube.com/watch?v=k7-N8R0-KY4)
 
 - [1 + 2 + 3 + 4 + ⋯](https://en.wikipedia.org/wiki/1_%2B_2_%2B_3_%2B_4_%2B_%E2%8B%AF)
 
-
-
 **Solution:**
-
 
 ```javascript
 function addUp(num) {
-    if(num <= 1) {
-        return num;
-    } else {
-        return num + addUp(num - 1);
-    }
+  if (num <= 1) {
+    return num;
+  } else {
+    return num + addUp(num - 1);
+  }
 }
 ```
 
 ---
 
-
-
 ## [Return the Min, Max, Length and Average of an Array](#min-max-len-ave)
 
-*Create a function that will accept an array and do the following:*
+_Create a function that will accept an array and do the following:_
 
-- *Get the lowest element*
+- _Get the lowest element_
 
-- *Get the highest element*
+- _Get the highest element_
 
-- *Get the length of array*
+- _Get the length of array_
 
-- *Get the Average of all element;*
+- _Get the Average of all element;_
 
-- *Store these criteria in a new array*
-
+- _Store these criteria in a new array_
 
 **Example:**
 
@@ -294,7 +272,6 @@ function addUp(num) {
 
 **Reference:**
 
-
 - [Math.min](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/min)
 
 - [Math.max](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/max)
@@ -303,35 +280,31 @@ function addUp(num) {
 
 - [Array.length](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/length)
 
-
 **Solution:**
-
 
 ```javascript
 function minMaxLengthAverage(arr) {
-    
-    const min = Math.min(...arr);
-    const max = Math.max(...arr);
-    const len = arr.length;
-    
-    //Reducer for get Average function
-    const ave = arr => arr.reduce((acc, curVal) => acc + curVal, 0) / len;
-    const average = ave(arr);
-    
-    //Return output
-    return [min, max, len, average];
+  const min = Math.min(...arr);
+  const max = Math.max(...arr);
+  const len = arr.length;
+
+  //Reducer for get Average function
+  const ave = arr => arr.reduce((acc, curVal) => acc + curVal, 0) / len;
+  const average = ave(arr);
+
+  //Return output
+  return [min, max, len, average];
 }
 ```
 
 ---
 
-##  [Sort Numbers in Ascending Order](#sort-ascend)
+## [Sort Numbers in Ascending Order](#sort-ascend)
 
-*`Array.sort()` sorts the **strings** alphabetically. What if we want to sort **numbers** from lowest to highest? Will it produce a correct output?*
+_`Array.sort()` sorts the **strings** alphabetically. What if we want to sort **numbers** from lowest to highest? Will it produce a correct output?_
 
 **Example:**
-*This is what happen if we apply `Array.sort()` to numbers:*
-
+_This is what happen if we apply `Array.sort()` to numbers:_
 
 ```javascript
 > arr = [45, 34, 23, 12, 7]
@@ -339,7 +312,8 @@ function minMaxLengthAverage(arr) {
 > [ 12, 23, 34, 45, 7 ]
 ```
 
-*Output is not correct right?, whereas we are expecting this to be the return value:*
+_Output is not correct right?, whereas we are expecting this to be the return value:_
+
 ```javascript
 > console.log(sortNumsAscending([7, 13, 3, 77, 100]));
 > [ 3, 5, 40, 100 ]
@@ -353,20 +327,19 @@ function minMaxLengthAverage(arr) {
 
 **Solution:**
 
-
 ```javascript
 function sortNumsAscending(arr) {
-    let sorter = (a, b) => {
-        return a - b;
-    };
+  let sorter = (a, b) => {
+    return a - b;
+  };
 
-    if(arr == []) {
-        return [];
-    } else if(arr == null) {
-        return [];
-    } else {
-        return arr.sort(sorter);
-    }
+  if (arr == []) {
+    return [];
+  } else if (arr == null) {
+    return [];
+  } else {
+    return arr.sort(sorter);
+  }
 }
 ```
 
@@ -374,7 +347,7 @@ function sortNumsAscending(arr) {
 
 ## [Convert Numbers in Roman Numerals](#number-to-roman)
 
-*Convert the given number to a Roman Numeral*
+_Convert the given number to a Roman Numeral_
 
 **Example:**
 
@@ -393,40 +366,50 @@ function sortNumsAscending(arr) {
 
 - [Array.splice()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice)
 
-
 **Solution:**
-
 
 ```javascript
 function romanNumbers(num) {
+  let values = [1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1];
+  let romanNumerals = [
+    "M",
+    "CM",
+    "D",
+    "CD",
+    "C",
+    "XC",
+    "L",
+    "XL",
+    "X",
+    "IX",
+    "V",
+    "IV",
+    "I"
+  ];
 
-    let values = [1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1];
-    let romanNumerals = ['M', 'CM', 'D', 'CD', 'C', 'XC', 'L', 'XL', 'X', 'IX', 'V', 'IV', 'I'];
-    
-    let roman = '';
+  let roman = "";
 
-    for(i =0; i<values.length; i++) {
-        while(values[i] <= num) {
-            roman += romanNumerals[i];
-            num -= values[i];
-        };
-    };
-    return roman;
-};
+  for (i = 0; i < values.length; i++) {
+    while (values[i] <= num) {
+      roman += romanNumerals[i];
+      num -= values[i];
+    }
+  }
+  return roman;
+}
 
 console.log(romanNumbers(1989));
 ```
 
-
 ## [Absolutely Sum](#abs-sum)
 
-*Return the absolute sum of all the array elements*
+_Return the absolute sum of all the array elements_
 
 **Example:**
 
 ```javascript
 > getAbsSum([-1, -3, -5, -4, -10, 0]);
-> 23    
+> 23
 ```
 
 **Reference:**
@@ -437,24 +420,21 @@ console.log(romanNumbers(1989));
 
 **Solution:**
 
-
 ```javascript
 function getAbsSum(arr) {
-    const reducer = (acc, currVal) => {
-        return acc + currVal;
-    };
+  const reducer = (acc, currVal) => {
+    return acc + currVal;
+  };
 
-    return Math.abs(arr.reduce(reducer));
+  return Math.abs(arr.reduce(reducer));
 }
 ```
 
-
 ---
-
 
 ## [Looping a Triangle](#triangle-loop)
 
-*Form a triangle using hash tags*
+_Form a triangle using hash tags_
 
 **Example:**
 
@@ -472,13 +452,11 @@ function getAbsSum(arr) {
 
 - [Loop](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Loops_and_iteration)
 
-
 **Solution:**
 
-
 ```javascript
-for(x = '#'; x.length <= 7; x += x) {
-    console.log(x);
+for (x = "#"; x.length <= 7; x += x) {
+  console.log(x);
 }
 ```
 
@@ -486,7 +464,7 @@ for(x = '#'; x.length <= 7; x += x) {
 
 ## [Count the number of Words](#words-count)
 
-*Return how many words was given*
+_Return how many words was given_
 
 **Example:**
 
@@ -501,21 +479,19 @@ for(x = '#'; x.length <= 7; x += x) {
 
 - [Array.length](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Array/length)
 
-
 **Solution:**
-
 
 ```javascript
 function countWords(str) {
-    return str.split(' ').length;
-};
+  return str.split(" ").length;
+}
 ```
 
 ---
 
 ## [Multiply by Length](#multiply-by-length)
 
-*Multiply all elements in an array by it's length*
+_Multiply all elements in an array by it's length_
 
 **Example:**
 
@@ -534,23 +510,23 @@ function countWords(str) {
 
 - [Array.prototype.map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map)
 
-
 **Solution:**
 
 ```javascript
 function MultiplyByLength(arr) {
-	let len = arr.length;
-	for (i = 0; i < len; i++) {
-		arr[i] = arr[i] * len;
-	}
-	return arr;
-};
+  let len = arr.length;
+  for (i = 0; i < len; i++) {
+    arr[i] = arr[i] * len;
+  }
+  return arr;
+}
 ```
 
 ---
+
 ## [Ends With "xxx"](#ends-with-xxx)
 
-*Create a function that will check if str1 ends with the characters in str2*
+_Create a function that will check if str1 ends with the characters in str2_
 
 **Rules:**
 
@@ -559,7 +535,6 @@ function MultiplyByLength(arr) {
 - Determine if second string matches ending of the first string
 
 - Return boolean value
-
 
 **Example:**
 
@@ -574,19 +549,19 @@ function MultiplyByLength(arr) {
 
 - [Array.prototype.join](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/join) method joins all elements of an array (or an array-like object) into a string and returns this string.
 
-
 **Solution:**
 
 ```javascript
 function checkEnding(str1, str2) {
-	return str1.endsWith(str2)
+  return str1.endsWith(str2);
 }
 ```
 
 ---
+
 ## [Repeating Letters](#repeating-letters)
 
-*Create a function that will repeat each string character two times*
+_Create a function that will repeat each string character two times_
 
 **Example:**
 
@@ -597,31 +572,30 @@ function checkEnding(str1, str2) {
 
 **Reference:**
 
-- [*Array.prototype.split*](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split) The `split()` method splits a String object into an array of strings by separating the string into substrings, using a specified separator string to determine where to make each split.
+- [_Array.prototype.split_](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split) The `split()` method splits a String object into an array of strings by separating the string into substrings, using a specified separator string to determine where to make each split.
 
-- [*Array.prototype.map*](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map) The `map()` method creates a new array with the results of calling a provided function on every element in the calling array.
+- [_Array.prototype.map_](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map) The `map()` method creates a new array with the results of calling a provided function on every element in the calling array.
 
-- [*Array.prototype.join*](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/join) This method joins all elements of an array (or an array-like object) into a string and returns this string.
-
+- [_Array.prototype.join_](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/join) This method joins all elements of an array (or an array-like object) into a string and returns this string.
 
 **Solution:**
 
 ```javascript
 function doubleChar(str) {
-	let x = str.split('')
-	return x.map(x => x.repeat(2)).join('');
+  let x = str.split("");
+  return x.map(x => x.repeat(2)).join("");
 }
 ```
 
 **Explanation:**
-*On the solution above, first we apply split method on the string argument and then store it in a variable called `x`.*
-*Next, we use the map function in order to performa duplication process on each element of the string, which was considered as array on this case because we just applied a split method on the string. Once duplication process is done, we call the `join()` method. Applying this method will convert the array back to being a string again but this time with a new duplicated values*
+_On the solution above, first we apply split method on the string argument and then store it in a variable called `x`._
+_Next, we use the map function in order to performa duplication process on each element of the string, which was considered as array on this case because we just applied a split method on the string. Once duplication process is done, we call the `join()` method. Applying this method will convert the array back to being a string again but this time with a new duplicated values_
 
 ---
 
 ## [Find the correct Index location](#locate-index)
 
-*Return the index location of an element from a given array. First argument is the array you'd like to search and the second one is the element (either string/number) to look for.*
+_Return the index location of an element from a given array. First argument is the array you'd like to search and the second one is the element (either string/number) to look for._
 
 **Example:**
 
@@ -638,20 +612,21 @@ function doubleChar(str) {
 
 ```javascript
 function findIndex(arr, element) {
-    return arr.indexOf(element);
+  return arr.indexOf(element);
 }
 ```
 
 **Explanation:**
-*`findIndex` function takes two arguments. First is the array to be monitored and then the last is the element on the array that needs to be located.*
-*JavaScript has a built in method called `indexOf()` and we used that in order to locate the index location of a certain element in an array. This method loops through the array locating the index value of an element*
+_`findIndex` function takes two arguments. First is the array to be monitored and then the last is the element on the array that needs to be located._
+_JavaScript has a built in method called `indexOf()` and we used that in order to locate the index location of a certain element in an array. This method loops through the array locating the index value of an element_
 
 ---
+
 ## [Do run this function while](#do-run-this-function-while)
 
 This exercise is courtesy of [FreeCodeCamp](https://learn.freecodecamp.org/javascript-algorithms-and-data-structures/basic-javascript/iterate-with-javascript-do---while-loops)
 
-*This exercise is an implementation of [do while](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/do...while) statement. Our goal here is to keep on running a function/statement, set a paramater and as soon as the result of the parameter evaluates to `false`, the function/statement execution will stop*
+_This exercise is an implementation of [do while](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/do...while) statement. Our goal here is to keep on running a function/statement, set a paramater and as soon as the result of the parameter evaluates to `false`, the function/statement execution will stop_
 
 **Example:**
 
@@ -671,7 +646,7 @@ console.log(result);
 **Reference:**
 
 - [do while](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/do...while) Definition from our friend in Mozilla:
-    > The do...while statement creates a loop that executes a specified statement until the test condition evaluates to false. The condition is evaluated after executing the statement, resulting in the specified statement executing at least once.
+  > The do...while statement creates a loop that executes a specified statement until the test condition evaluates to false. The condition is evaluated after executing the statement, resulting in the specified statement executing at least once.
 
 **Solution:**
 
@@ -690,14 +665,11 @@ console.log(result);
 
 ---
 
-
 ## Bugs, Issues and want to Contribute?
-
 
 We're on CodeTriage!
 
 [![Open Source Helpers](https://www.codetriage.com/kbpsystem777/jsexercises/badges/users.svg)](https://www.codetriage.com/kbpsystem777/jsexercises)
-
 
 Please feel free to submit an [Issue](https://github.com/KBPsystem777/JSexercises/issues/new) or [Pull Requests](https://github.com/KBPsystem777/JSexercises/pulls)
 
